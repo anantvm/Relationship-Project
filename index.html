@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Journey</title>
+    <meta name="description" content="A romantic dashboard celebrating our time together.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="hearts-container"></div>
+    
+    <div class="dashboard-container">
+        <header class="header">
+            <h1 class="sweet-message">To my amazing girlfriend ❤️</h1>
+            <p class="subtitle">Every second with you is a blessing. Here's a look at our stats.</p>
+        </header>
+
+        <section class="counter-section box-glass">
+            <h2>Time We've Spent Together</h2>
+            <div class="time-together" id="time-counter">
+                <div class="time-box">
+                    <span id="days" class="time-value">0</span>
+                    <span class="time-label">Days</span>
+                </div>
+                <div class="time-box">
+                    <span id="hours" class="time-value">0</span>
+                    <span class="time-label">Hours</span>
+                </div>
+                <div class="time-box">
+                    <span id="minutes" class="time-value">0</span>
+                    <span class="time-label">Minutes</span>
+                </div>
+                <div class="time-box">
+                    <span id="seconds" class="time-value">0</span>
+                    <span class="time-label">Seconds</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-grid">
+            <div class="stat-card box-glass fade-in" style="animation-delay: 0.1s;">
+                <div class="stat-icon">💬</div>
+                <div class="stat-info">
+                    <h3>Total Messages</h3>
+                    <p class="stat-value" id="totalMessages">...</p>
+                    <p class="stat-desc">Every message is a memory we've created together 💖</p>
+                </div>
+            </div>
+            
+            <div class="stat-card box-glass fade-in" style="animation-delay: 0.2s;">
+                <div class="stat-icon">👑</div>
+                <div class="stat-info">
+                    <h3>Top Sender</h3>
+                    <p class="stat-value" id="topSender">...</p>
+                    <p class="stat-desc">Someone clearly loves talking more 😉</p>
+                </div>
+            </div>
+
+            <div class="stat-card box-glass fade-in" style="animation-delay: 0.3s;">
+                <div class="stat-icon">🌙</div>
+                <div class="stat-info">
+                    <h3>Most Active Time</h3>
+                    <p class="stat-value" id="activeHour">...</p>
+                    <p class="stat-desc">Our favorite time to talk and just be us 🌙</p>
+                </div>
+            </div>
+
+            <div class="stat-card box-glass fade-in" style="animation-delay: 0.4s;">
+                <div class="stat-icon">📈</div>
+                <div class="stat-info">
+                    <h3>Avg. Messages / Day</h3>
+                    <p class="stat-value" id="messagesPerDay">...</p>
+                    <p class="stat-desc">Our digital heartbeat, beating strong every day 💗</p>
+                </div>
+            </div>
+            <div class="stat-card box-glass fade-in" style="animation-delay: 0.5s;">
+                <div class="stat-icon">😂</div>
+                <div class="stat-info">
+                    <h3>Most Used Emoji</h3>
+                    <p class="stat-value" id="mostUsedEmoji">...</p>
+                    <p class="stat-desc">A little symbol that means a thousand words between us ✨</p>
+                </div>
+            </div>
+
+            <div class="stat-card box-glass fade-in" style="animation-delay: 0.6s;">
+                <div class="stat-icon">🏁</div>
+                <div class="stat-info">
+                    <h3>Who Texts First More</h3>
+                    <p class="stat-value" id="firstTexter">...</p>
+                    <p class="stat-desc">The first thing on someone's mind every morning 🌅</p>
+                </div>
+            </div>
+
+            <div class="stat-card box-glass fade-in" style="animation-delay: 0.7s;">
+                <div class="stat-icon">📅</div>
+                <div class="stat-info">
+                    <h3>Total Days Chatted</h3>
+                    <p class="stat-value" id="totalDaysChatted">...</p>
+                    <p class="stat-desc">Every passing day is a page in our beautiful story 📖</p>
+                </div>
+            </div>
+
+            <div class="stat-card box-glass fade-in" style="animation-delay: 0.8s;">
+                <div class="stat-icon">🔥</div>
+                <div class="stat-info">
+                    <h3>Longest Chat Streak</h3>
+                    <p class="stat-value" id="longestStreak">...</p>
+                    <p class="stat-desc">We never stopped choosing each other ❤️</p>
+                </div>
+            </div>
+
+            <div class="stat-card box-glass fade-in first-message-card" style="animation-delay: 0.9s; grid-column: 1 / -1;">
+                <div class="stat-icon">💬</div>
+                <div class="stat-info" style="gap: 0.2rem;">
+                    <h3>First Message</h3>
+                    <p class="stat-value" id="firstSender" style="font-size: 1rem; color: var(--text-muted); font-weight: normal;">...</p>
+                    <p class="stat-value" id="firstMessageText" style="font-size: 1.2rem; font-style: italic; margin-bottom: 0.3rem;">"..."</p>
+                    <p class="stat-desc">The very moment our beautiful conversation started 💌</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="little-world-section box-glass fade-in" style="animation-delay: 1.0s;">
+            <h2>Our Little World 💖</h2>
+            <div class="art-container">
+                <!-- House -->
+                <div class="house">
+                    <div class="roof"></div>
+                    <div class="walls">
+                        <div class="door"></div>
+                        <div class="window"></div>
+                    </div>
+                    <div class="smoke smoke-1"></div>
+                    <div class="smoke smoke-2"></div>
+                </div>
+
+                <!-- Couple -->
+                <div class="couple">
+                    <!-- Him -->
+                    <div class="person him">
+                        <div class="head him-head"></div>
+                        <div class="body"></div>
+                        <div class="arm arm-left"></div>
+                        <div class="arm arm-right"></div>
+                        <div class="leg leg-left"></div>
+                        <div class="leg leg-right"></div>
+                    </div>
+                    <!-- Floating heart acting as holding hands -->
+                    <div class="floating-heart">❤️</div>
+                    <!-- Her -->
+                    <div class="person her">
+                        <div class="head her-head"></div>
+                        <div class="body body-dress"></div>
+                        <div class="arm arm-left"></div>
+                        <div class="arm arm-right"></div>
+                        <div class="leg leg-left"></div>
+                        <div class="leg leg-right"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="caption">Just us, building our little world together ❤️</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
